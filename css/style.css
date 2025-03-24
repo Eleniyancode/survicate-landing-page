@@ -40,13 +40,13 @@ body {
     background-color: var(--white-survi);
     color: var(--black);
     font-family: "Inter", sans-serif ;
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     line-height: 2rem;
-    border: 4px solid burlywood;
+    /* border: 4px solid burlywood; */
 }
  
 .container {
-    border: 4px solid burlywood;
+    /* border: 4px solid burlywood; */
     max-width: 110rem;
     width: 100%;
     padding: 1rem;
@@ -56,7 +56,7 @@ header {
     width: 100%;
     max-width: 105rem;
     height: 5rem;
-    border: 4px solid burlywood;
+    /* border: 4px solid burlywood; */
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -67,7 +67,7 @@ header {
 
 .header-img_logo {
     display: inline-block;
-    width: 14rem;
+    width: 19rem;
 }
 
 
@@ -85,8 +85,8 @@ header {
     height: 20px;
     cursor: pointer;
     position: absolute;
-    top: 5px;
-    right: 20px;
+    top: 2px;
+    right: 30px;
     z-index: 2;
 }
 
@@ -157,6 +157,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
+    padding-inline: 2rem;
 }
 
 .hero-section_logo {
@@ -185,12 +186,12 @@ header {
     align-self: center;
     align-items: center;
     gap: 0.3rem;
-    width: 85%;
+    width: 95%;
     margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 3rem;
-    max-width: 60rem;
+    
 }
 
 .switch-item {
@@ -212,10 +213,10 @@ header {
     position: relative;
 } */
 
-.switch-item-title {
-    /* width: 25rem; */
+/* .switch-item-title {
+    width: 100rem;
     border: 4px dotted wheat;
-}
+} */
 
 .switch-item-image {
     width: 10%;
@@ -258,7 +259,7 @@ Toggle the menu when checkbox is checked */
 
 .section-div_partners_logo {
     margin: 0 auto;
-    border: 4px dotted tomato;
+    /* border: 4px dotted tomato; */
     /* text-align: center; */
     display: flex;
     flex-direction: row;
@@ -278,9 +279,7 @@ Toggle the menu when checkbox is checked */
     row-gap: 2rem;
 }
 
-.div-p_text {
-    display: none;
-}
+
 
 
 /* sub section styles goes here */
@@ -320,12 +319,12 @@ Toggle the menu when checkbox is checked */
 /* section with image background styles */
 
 .section_with_image_bg {
-    padding-block: 3rem;
+    padding-block: 10rem;
     /* text-align: center; */
     background: url(../assests/images/67891db9b4eea24fb86144d0_USE\ CASES\ \(2\)\ \(1\).webp);
     background-size: cover;
     background-repeat: no-repeat;
-    border: 12px dotted crimson;
+    /* border: 12px dotted crimson; */
 }
 
 .section_with_image_bg h2 {
@@ -337,7 +336,7 @@ Toggle the menu when checkbox is checked */
 .div-cards_container {
     display: flex;
     justify-content: space-between;
-    border: 12px dotted cyan;
+    /* border: 12px dotted cyan; */
 
 }
 
@@ -408,9 +407,13 @@ Toggle the menu when checkbox is checked */
 
 .btn-primary {
     background-color: var(--coral);
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .btn-secondary {
     background-color: var(--dark-grey);
     color: var(--coral-2);
+    font-weight: bold;
+    font-size: 16px;
 }
