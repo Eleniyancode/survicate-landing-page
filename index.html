@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/queries.css" />
+    <link rel="stylesheet" href="./css/media-queries/phone-view.css"/>
+    <link rel="stylesheet" href="./css/media-queries/tablet-view.css">
     <link rel="stylesheet" href="./css/reset.css" />
     <title>Document</title>
   </head>
@@ -491,14 +492,14 @@
               </div>
             </div>
 
-            <div class="div-step_content_button_container">
-              <button class="div-step_content_button step_two_button card_button">
+            <div class="div-step_content_button_container btn-free-wrapper">
+              <button class="div-step_content_button step_two_button btn_free">
                 Try the platform for free
               </button>
             </div>
         </section>
 
-        <section class="section_white_bg">
+        <section class="section_with_white_bg">
             <h2 class="section_heading">
               How top teams turn <br> feedback into alignment
             </h2>
@@ -540,8 +541,77 @@
               Send the survey data to all your tools with 1-click native integrations
             </h2>
   
-            <div class="div_logos_container">
-              <div class="div-grid-container">
+            <div  class="div_logos_container">
+              <div id="grid-item-1" class="div-grid-container">
+                <div class="div_logo">
+                  <img src="./assests/images/6389d73e444706172484b9b4_Googleanalytics-logo.webp" alt="google-Analytics-logo">
+                  <p>Google Analytics</p>
+                </div>
+                <div class="div_logo">
+                  <img src="./assests/images/6389d73e152f7a4de9c95ed5_Googlesheets-logo.webp" alt="Google Sheets logo">
+                  <p>Google Sheets</p>
+                </div>
+                <div class="div_logo">
+                  <img src="./assests/images/hubspot-dark-logo.svg" alt="hubspot-dark-logo">
+                  <p>Hubspot</p>
+                </div>
+                <div class="div_logo">
+                  <img src="./assests/images/6389d73e251e56be984c5277_Intercom-logo.webp" alt="Intercom_logo">
+                  <p>Intercom</p>
+                </div>
+                <div class="div_logo">
+                  <img src="./assests/images/6539069554db0f08b443ebcf_Salesforce-logo.svg" alt="Salesforce-logo">
+                  <p>Salesforce</p>
+                </div>
+                <div class="div_logo">
+                  <img src="./assests/images/6389d757c8b1931c90147861_Segment-logo.webp" alt="Segment-logo">
+                  <p>Segment</p>
+                </div>
+                <div class="div_logo">
+                  <img src="./assests/images/6389d75a7c6fa16bfb5c3049_Slack-logo.webp" alt="Slack-logo">
+                  <p>Slack</p>
+                </div>
+                <div class="div_logo">
+                  <img src="./assests/images/6389d75abc615a410a3702c8_Zendesk-logo.webp" alt="Zendesk-logo">
+                  <p>Zendesk</p>
+                </div>
+                
+              </div>
+             <div id="grid-item-2" class="div-grid-container">
+                <div class="div_logo">
+                  <img src="./assests/images/6389d73e444706172484b9b4_Googleanalytics-logo.webp" alt="google-Analytics-logo">
+                  <p>Google Analytics</p>
+                </div>
+                <div class="div_logo">
+                  <img src="./assests/images/6389d73e152f7a4de9c95ed5_Googlesheets-logo.webp" alt="Google Sheets logo">
+                  <p>Google Sheets</p>
+                </div>
+                <div class="div_logo">
+                  <img src="./assests/images/hubspot-dark-logo.svg" alt="hubspot-dark-logo">
+                  <p>Hubspot</p>
+                </div>
+                <div class="div_logo">
+                  <img src="./assests/images/6389d73e251e56be984c5277_Intercom-logo.webp" alt="Intercom_logo">
+                  <p>Intercom</p>
+                </div>
+                <div class="div_logo">
+                  <img src="./assests/images/6539069554db0f08b443ebcf_Salesforce-logo.svg" alt="Salesforce-logo">
+                  <p>Salesforce</p>
+                </div>
+                <div class="div_logo">
+                  <img src="./assests/images/6389d757c8b1931c90147861_Segment-logo.webp" alt="Segment-logo">
+                  <p>Segment</p>
+                </div>
+                <div class="div_logo">
+                  <img src="./assests/images/6389d75a7c6fa16bfb5c3049_Slack-logo.webp" alt="Slack-logo">
+                  <p>Slack</p>
+                </div>
+                <div class="div_logo">
+                  <img src="./assests/images/6389d75abc615a410a3702c8_Zendesk-logo.webp" alt="Zendesk-logo">
+                  <p>Zendesk</p>
+                </div>
+              </div>
+              <div id="grid-item-3" class="div-grid-container ">
                 <div class="div_logo">
                   <img src="./assests/images/6389d73e444706172484b9b4_Googleanalytics-logo.webp" alt="google-Analytics-logo">
                   <p>Google Analytics</p>
@@ -576,9 +646,10 @@
                 </div>
               </div>
             </div>
+            </div>
              
-            <div class="div-step_content_button_container section_with_logo_button">
-              <button class="div-step_content_button step_two_button card_button">
+            <div class="div-step_content_button_container section_with_logo_button card_button_logo_wrapper">
+              <button class="div-step_content_button step_two_button card_button card_button_logo">
                 See all integrations
               </button>
             </div>
@@ -626,6 +697,132 @@
             </div>
           </div>
         </section>
+
+        <section class="section_FAQ">
+          <div class="section-div_FAQ_wrapper">
+
+            <div class="div-FAQ_heading">
+              <p>FAQS</p>
+            </div>
+            <div class="FAQ">
+              <div class="FAQ_question">
+                How can Survicate be used as an all-in-one customer feedback software?
+              </div>
+
+              <div class="FAQ_button">
+                  <!-- Hidden checkbox -->
+              <input type="checkbox" id="FAQ-toggle" />
+
+                  <!-- Menu Button -->
+                <label for="FAQ-toggle" class="FAQ-button">
+                <span></span>
+                <span></span>
+              </label>
+            
+              <div class="anwser">
+              <p>Survicate is a leading customer feedback platform that allows businesses to <strong>collect, analyze, and act on customer insights</strong>  efficiently. By providing <strong>multiple survey distribution channels</strong> , including website surveys, mobile app surveys, email surveys, and in-product surveys, Survicate ensures you can reach your customers at the right touchpoints.</p>  
+              <p>This <strong>all-in-one customer feedback software</strong> makes it easy to gather qualitative and quantitative data, segment responses, and track user sentiment over time. </p>
+
+              <p>Survicate's AI-powered  <a href="#">Insights Hub</a> also helps <strong>categorize feedback automatically</strong>, making it easier to </p>
+              </div>
+              </div>
+            </div>
+
+            <div class="FAQ">
+              <div class="FAQ_question">
+                What makes Survicate a top customer feedback platform?
+              </div>
+              
+
+              <div class="FAQ_button">
+                  <!-- Hidden checkbox -->
+              <input type="checkbox" id="FAQ-toggle2" />
+
+                  <!-- Menu Button -->
+                <label for="FAQ-toggle2" class="FAQ-button">
+                <span></span>
+                <span></span>
+              </label>
+            
+              <div class="anwser">
+                <p>Survicate truly stands out for its <strong>user-friendly interface, powerful automation capabilities, and AI-driven insights</strong>. Whether you’re a startup or an <a href="#">enterprise</a>, Survicate provides the tools you need to <a href="#">improve customer experience</a>, <a href="#">lower churn rates</a>, and increase retention.</p>
+              </div>
+              </div>
+            </div>
+
+            <div class="FAQ">
+              <div class="FAQ_question">
+                Can Survicate automate survey distribution as part of a customer feedback program?
+              </div>
+
+              <div class="FAQ_button">
+                  <!-- Hidden checkbox -->
+              <input type="checkbox" id="FAQ-toggle3" />
+
+                  <!-- Menu Button -->
+                <label for="FAQ-toggle3" class="FAQ-button">
+                <span></span>
+                <span></span>
+              </label>
+           
+              <div class="anwser">
+                <p>Yes, Survicate lets you <strong>automate survey distribution</strong> so you can capture feedback at just the right moments.&nbsp;</p>
+                <p>You can <strong>schedule recurring surveys</strong> to track customer satisfaction over time and trigger surveys based on specific user actions—like post-purchase, a support interaction, or a website visit.&nbsp;</p>
+              </div>
+              </div>
+            </div>
+
+            <div class="FAQ">
+              <div class="FAQ_question">
+                How does Survicate help businesses implement an effective customer feedback program?
+              </div>
+
+              <div class="FAQ_button">
+                  <!-- Hidden checkbox -->
+              <input type="checkbox" id="FAQ-toggle4" />
+
+                  <!-- Menu Button -->
+                <label for="FAQ-toggle4" class="FAQ-button">
+                <span></span>
+                <span></span>
+                </label>
+              
+              <div class="anwser">
+                <p>A structured <strong>customer feedback program</strong> is essential for your long-term success, and Survicate makes it easy every step of the way.&nbsp;</p>
+              </div>
+              </div>
+            </div>
+
+            <div class="FAQ">
+              <div class="FAQ_question">
+                <p>
+                  How does Survicate help manage customer feedback effectively?
+                </p>
+              </div>
+              
+
+                <div class="FAQ_button">
+                  <!-- Hidden checkbox -->
+                <input type="checkbox"    id="FAQ-toggle5" />
+
+                  <!-- Menu Button -->
+                <label for="FAQ-toggle5" class="FAQ-button">
+                <span></span>
+                <span></span>
+                </label>
+              
+              <div class="anwser">
+                <p>Managing customer feedback efficiently involves more than just collecting responses—it requires thorough analysis, thoughtful categorization, and decisive action.&nbsp;</p>
+                <p>Survicate simplifies the entire process by <strong>centralizing all feedback data in one place</strong>, whether it comes from surveys, online reviews, emails, support tickets, or calls. Its <strong>AI-powered tools automatically categorize responses</strong>—identifying feature requests, complaints, or positive testimonials—so you can quickly determine where to focus your efforts.&nbsp;</p>
+              </div>
+              </div>
+            </div>
+              <div class="div-FAQ_more">
+                <a href="#">See more questions</a>
+              </div>
+          </div>
+
+        </section>
       </main>
 
       <footer>
@@ -633,30 +830,84 @@
             <img class="footer_img_logo" src="./assests/images/Survicate-logo-image.svg" alt="Survicate-logo-image">
 
             <div class="div-footer_flex_container">
-              <div class="div-footer-social_icon">
-                <a href="#"><img src="./assests/images/6048855f0937f16356af000b_footer-facebook-icone.svg" alt="Facebook_icon"></a>
-                <a href="#"><img src="./assests/images/604885980937f1decbaf0074_footer-linkedin-icone.svg" alt="linkedin icon"></a>
-                <a href="#"><img src="./assests/images/footer-x-icon.svg" alt="X_icon"></a>
-                <a href="#"><img src="./assests/images/6048855f0937f16356af000b_footer-facebook-icone.svg" alt=""></a>
-              </div>
+              <div class="footer_nav footer-nav-social">
+                <div class="div-footer-social_icon">
+                  <div class="social_icon">
+                    <a href="#"><img src="./assests/images/6048855f0937f16356af000b_footer-facebook-icone.svg" alt="Facebook_icon"></a>
+                  <a href="#"><img src="./assests/images/604885980937f1decbaf0074_footer-linkedin-icone.svg" alt="linkedin icon"></a>
+                  <a href="#"><img src="./assests/images/footer-x-icon.svg" alt="X_icon"></a>
+                  <a href="#"><img src="./assests/images/6048855f0937f16356af000b_footer-facebook-icone.svg" alt=""></a>
+                  </div>
+                  <p id="social-icon-p">We’re also there</p>
+                </div>
+                <div class="footer_nav">
+                  
+                    <p>How it work</p>
+                    <a href="#">Build Surveys</a>
+                    <a href="#">Distribute Surveys</a>
+                    <a href="#">Analyze Results</a>
+                    <a href="#">Act on feedback</a>
+              
+                </div>
 
-              <div class="footer_nav">
-                <p>How it work</p>
               </div>
+              
+
+             
+
+             
               <div class="footer_nav">
                 <p>Features</p>
+                <a href="#">AI Analysis</a>
+                <a href="#">Multilanguage <br> feedback</a>
+                <a href="#">Transcriptions</a>
               </div>
               <div class="footer_nav">
                 <p>Solutions</p>
+                <a href="#">Email Surveys </a>
+                <a href="#">Link Surveys</a>
+                <a href="#">Net Promoter <br> Score</a>
+                <a href="#">Website <br> Surveys</a>
+                <a href="#">In Product <br> Surveys</a>
+                <a href="#">Intercom <br> Messenger <br> Surveys</a>
+                <a href="#">Insights Hub</a>
+                <a href="#">Feedback Button</a>
+                <a href="#">Enterprise survey <br> </a>
+                <a href="#">Insights Hub</a>
+                <a href="#">Feedback Button</a>
+                <a href="#">Insights Hub</a>
+                <a href="#">Feedback Button</a>
+                
               </div>
               <div class="footer_nav">
                 <p>Resources</p>
+                <a href="#">Insights Hub</a>
+                <a href="#">Feedback Button</a>
+                <a href="#">Enterprise survey <br> </a>
+                <a href="#">Insights Hub</a>
+                <a href="#">Feedback Button</a>
+                <a href="#">Insights Hub</a>
+                <a href="#">Feedback Button</a>
               </div>
               <div class="footer_nav">
                 <p>Survey Template</p>
+                <a href="#">Insights Hub</a>
+                <a href="#">Feedback Button</a>
+                <a href="#">Enterprise survey <br> </a>
+                <a href="#">Insights Hub</a>
+                <a href="#">Feedback Button</a>
+                <a href="#">Insights Hub</a>
+                <a href="#">Feedback Button</a>
               </div>
               <div class="footer_nav">
                 <p>Company</p>
+                <a href="#">Insights Hub</a>
+                <a href="#">Feedback Button</a>
+                <a href="#">Enterprise survey <br> </a>
+                <a href="#">Insights Hub</a>
+                <a href="#">Feedback Button</a>
+                <a href="#">Insights Hub</a>
+                <a href="#">Feedback Button</a>
               </div>
             </div>
 
