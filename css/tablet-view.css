@@ -1,4 +1,4 @@
-@media (min-width: 60rem) {
+@media (min-width: 30rem) {
   * {
     margin: 0;
     padding: 0;
@@ -528,6 +528,54 @@
     font-size: 1.75rem;
     text-decoration: none;
     margin-top: 2rem;
+  }
+
+  #footer_nav-toggle {
+    display: none;
+  }
+
+  .footer_nav-button {
+    display: none;
+  }
+
+  #footer_nav-toggle2 {
+    display: none;
+  }
+
+  .footer_nav-button2 {
+    display: none;
+  }
+  
+  #footer_nav-toggle3 {
+    display: none;
+  }
+
+  .footer_nav-button3 {
+    display: none;
+  }
+
+  #footer_nav-toggle4 {
+    display: none;
+  }
+
+  .footer_nav-button4 {
+    display: none;
+  }
+
+  #footer_nav-toggle5 {
+    display: none;
+  }
+
+  .footer_nav-button5 {
+    display: none;
+  }
+
+  #footer_nav-toggle6 {
+    display: none;
+  }
+
+  .footer_nav-button6 {
+    display: none;
   }
   
   

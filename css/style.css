@@ -46,29 +46,66 @@ body {
 }
  
 .container {
-    /* border: 4px solid burlywood; */
-    max-width: 110rem;
+    border: 4px solid burlywood;
+    max-width: 150rem;
     width: 100%;
     padding: 1rem;
+    margin: 0 auto;
 }
 
 header {
     width: 100%;
-    max-width: 105rem;
-    height: 5rem;
-    /* border: 4px solid burlywood; */
+    max-width: 150rem;
+    height: 15rem;
+    border: 4px solid burlywood;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 2rem;
     position: fixed;
 }
 
 .header-img_logo {
     display: inline-block;
-    width: 19rem;
+    width: 12rem;
 }
+
+.header-nav-options {
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+    font-size: 1.5rem;
+    gap: 4rem;
+}
+
+.header-button {
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+
+.btn-login {
+    background-color: var(--white-survi);
+    border: none;
+}
+
+.btn-start {
+    background-color: var(--coral-2);
+    border: none;
+    color: white;
+}
+
+.btn-book {
+    background-color: var(--grey);
+    color: var(--coral-2);
+    border: none;
+}
+
+nav {
+    display: none;
+}
+
 
 
 /* CSS Style for the dropdown toggle button on header navigation */
@@ -77,6 +114,7 @@ header {
 #menu-toggle {
     display: none;
 }
+
 
 /* Style for the menu button */
 .menu-button {
@@ -223,6 +261,8 @@ header {
     display: inline-block;
 }
 
+
+
 /* Css style for toggling the display of images for the switch section  */
 
 /* .image-toggle {
@@ -236,7 +276,9 @@ header {
     width: 25rem;
 } */
 
-/* .switch-item-image-two {
+
+
+ .switch-item-image-two {
     display: none;
     transition: 0.3s;
 }
@@ -249,7 +291,7 @@ header {
     display: none;
 }
 
-Toggle the menu when checkbox is checked */
+/*Toggle the menu when checkbox is checked */
 /* .image-toggle-two:checked ~ .switch-item-image-two {
     display: block;
     position: absolute;

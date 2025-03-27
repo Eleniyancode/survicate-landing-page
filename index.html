@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/phone-view.css"/>
     <link rel="stylesheet" href="./css/tablet-view.css">
+    <link rel="stylesheet" href="./css/tablet-lg-view.css">
   
     <title>Document</title>
   </head>
@@ -19,6 +21,27 @@
           src="./assests/images/Survicate-logo-image.svg"
           alt="logo-image"
         />
+
+        <ul class="header-nav-options">
+          <li>Product
+            <ul>
+              <li>Create Surveys</li>
+              <li>Distributr Surveys</li>
+              <li>Act on Feedback</li>
+            </ul>
+          </li>
+          <li>Solutions</li>
+          <li>Pricing</li>
+          <li>integrations</li>
+          <li>Resources</li>
+          <li>Agencies</li>
+        </ul>
+
+        <span>
+          <button class="header-button btn-login">Log in</button>
+          <button class="header-button btn-start">Start Free</button>
+          <button class="header-button btn-book">Book a Call</button>
+        </span>
 
         <nav>
           <!-- Hidden checkbox -->
@@ -70,12 +93,11 @@
                   src="./assests/images/66f68d203c9d01623c907a09_assignment.svg"
                   alt="icon-image"
                 />
-                <p class="switch-item-title">Customer Surveys</p>
-                <!-- Hidden checkbox -->
-                <!-- <input type="checkbox" class="image-toggle image-toggle-one">
-            <label for="image-toggle" class="image-button">    
-            </label> -->
-              </div>
+               <label for="image-toggle" class="image-button">
+                     <p class="switch-item-title">Customer Surveys</p>
+                </label>
+                
+               
 
               <div class="switch-item">
                 <img
@@ -83,10 +105,13 @@
                   src="./assests/images/66f68d283a4a571f65ed0a6b_add_comment.svg"
                   alt="icon-image"
                 />
-                <p class="switch-item-title">Insights Hub</p>
+                <label for="image-toggle-two" class="image-button">
+                  <p class="switch-item-title">Insights Hub</p>
+                </label>
+              
                 <!-- Hidden checkbox -->
                 <!-- <input type="checkbox" class="image-toggle image-toggle-two">
-            <label for="image-toggle" class="image-button">
+            <label for="image-toggle-two" class="image-button">
               
             </label> -->
               </div>
@@ -97,7 +122,11 @@
                   src="./assests/images/66f68d312754d618eb96d817_donut_small.svg"
                   alt="icon image"
                 />
-                <p class="switch-item-title">Feedback Analytics</p>
+
+                <label for="image-toggle-three" class="image-button">
+                  <p class="switch-item-title">Feedback Analytics</p>
+                </label>
+                
 
                 <!-- Hidden checkbox -->
                 <!-- <input type="checkbox" class="image-toggle image-toggle-three">
@@ -112,7 +141,11 @@
                   src="./assests/images/6711069ab852284eb2d3d731_cloud_sync.svg"
                   alt="cloud-icon-image"
                 />
-                <p class="switch-item-title">Automated Flows</p>
+
+                <label for="image-toggle-four" class="image-button">
+                  <p class="switch-item-title">Automated Flows</p>
+                </label>
+                
                 <!-- Hidden checkbox -->
                 <!-- <input type="checkbox" class="image-toggle image-toggle-four">
             <label for="image-toggle" class="image-button">
@@ -123,23 +156,36 @@
           </div>
 
           <div class="section-img_switch_item">
+             <!-- Hidden checkbox -->
+                <input type="checkbox" id="image-toggle">
+           
+              </div>
             <img
               class="switch-item-image-one"
               src="./assests/images/surveys-image.webp"
               alt=""
             />
+
+            <!-- Hidden checkbox -->
+                 <input type="checkbox" id="image-toggle-two">
             <img
-              class="switch-item-image switch-item-image-two"
+              class="switch-item-image-two"
               src="./assests/images/67d9596edc0e2656111c25a6_insights-p-1600.webp"
               alt=""
             />
+
+             <!-- Hidden checkbox -->
+             <input type="checkbox" id="image-toggle-three">
             <img
-              class="switch-item-image switch-item-image-four"
+              class="switch-item-image-four"
               src="./assests/images/67d959853e41828456ec326d_Feedback Automation-p-1600.webp"
               alt=""
             />
+
+             <!-- Hidden checkbox -->
+             <input type="checkbox" id="image-toggle-four">
             <img
-              class="switch-item-image switch-item-image-three"
+              class="switch-item-image-three"
               src="./assests/images/67d95971ef9e6c623fe75018_analysis (1)-p-1600.webp"
               alt=""
             />
@@ -845,12 +891,20 @@
                 <div class="footer_nav footer_nav_how_it_work">
                   
                     <p>How it work</p>
+
+                     <!-- Hidden checkbox -->
+          <input type="checkbox" id="footer_nav-toggle" />
+
+          <!-- footer_nav Button -->
+          <label for="footer_nav-toggle" class="footer_nav-button">
+            <span>&#9662;</span>
+          </label>
                     
 
-                    <a  class="footer-nav_link" href="#">Build Surveys</a>
-                    <a class="footer-nav_link" href="#">Distribute Surveys</a>
-                    <a class="footer-nav_link" href="#">Analyze Results</a>
-                    <a class="footer-nav_link" href="#">Act on feedback</a>
+                    <a  class="footer-nav_link footer-nav_link_toggle" href="#">Build Surveys</a>
+                    <a class="footer-nav_link footer-nav_link_toggle" href="#">Distribute Surveys</a>
+                    <a class="footer-nav_link footer-nav_link_toggle" href="#">Analyze Results</a>
+                    <a class="footer-nav_link footer-nav_link_toggle" href="#">Act on feedback</a>
               
                 </div>
 
@@ -861,57 +915,93 @@
 
              
               <div class="footer_nav">
-                <p>Features</p>
-                <a class="footer-nav_link" href="#">AI Analysis</a>
-                <a class="footer-nav_link" href="#">Multilanguage <br> feedback</a>
-                <a class="footer-nav_link" href="#">Transcriptions</a>
+                <p>Features </p>
+                 <!-- Hidden checkbox -->
+          <input type="checkbox" id="footer_nav-toggle2" />
+
+          <!-- footer_nav Button -->
+          <label for="footer_nav-toggle2" class="footer_nav-button2">
+            <span>&#9662;</span>
+          </label>
+                <a class="footer-nav_link footer-nav_link_toggle2 " href="#">AI Analysis</a>
+                <a class="footer-nav_link footer-nav_link_toggle2 " href="#">Multilanguage <br> feedback</a>
+                <a class="footer-nav_link footer-nav_link_toggle2 " href="#">Transcriptions</a>
               </div>
               <div class="footer_nav">
                 <p>Solutions</p>
-                <a class="footer-nav_link" href="#">Email Surveys </a>
-                <a class="footer-nav_link" href="#">Link Surveys</a>
-                <a class="footer-nav_link" href="#">Net Promoter <br> Score</a>
-                <a class="footer-nav_link" href="#">Website <br> Surveys</a>
-                <a class="footer-nav_link" href="#">In Product <br> Surveys</a>
-                <a class="footer-nav_link" href="#">Intercom <br> Messenger <br> Surveys</a>
-                <a class="footer-nav_link" href="#">Insights Hub</a>
-                <a class="footer-nav_link" href="#">Feedback Button</a>
-                <a class="footer-nav_link" href="#">Enterprise survey <br> </a>
-                <a class="footer-nav_link" href="#">Insights Hub</a>
-                <a class="footer-nav_link" href="#">Feedback Button</a>
-                <a class="footer-nav_link" href="#">Insights Hub</a>
-                <a class="footer-nav_link" href="#">Feedback Button</a>
+                <!-- Hidden checkbox -->
+          <input type="checkbox" id="footer_nav-toggle3" />
+
+          <!-- footer_nav Button -->
+          <label for="footer_nav-toggle3" class="footer_nav-button3">
+            <span>&#9662;</span>
+          </label>
+                <a class="footer-nav_link footer-nav_link_toggle3 " href="#">Email Surveys </a>
+                <a class="footer-nav_link footer-nav_link_toggle3" href="#">Link Surveys</a>
+                <a class="footer-nav_link footer-nav_link_toggle3" href="#">Net Promoter <br> Score</a>
+                <a class="footer-nav_link footer-nav_link_toggle3" href="#">Website <br> Surveys</a>
+                <a class="footer-nav_link footer-nav_link_toggle3" href="#">In Product <br> Surveys</a>
+                <a class="footer-nav_link footer-nav_link_toggle3" href="#">Intercom <br> Messenger <br> Surveys</a>
+                <a class="footer-nav_link footer-nav_link_toggle3" href="#">Insights Hub</a>
+                <a class="footer-nav_link footer-nav_link_toggle3" href="#">Feedback Button</a>
+                <a class="footer-nav_link footer-nav_link_toggle3" href="#">Enterprise survey <br> </a>
+                <a class="footer-nav_link footer-nav_link_toggle3" href="#">Insights Hub</a>
+                <a class="footer-nav_link footer-nav_link_toggle3" href="#">Feedback Button</a>
+                <a class="footer-nav_link footer-nav_link_toggle3" href="#">Insights Hub</a>
+                <a class="footer-nav_link footer-nav_link_toggle3" href="#">Feedback Button</a>
                 
               </div>
               <div class="footer_nav">
                 <p>Resources</p>
-                <a class="footer-nav_link" href="#">Insights Hub</a>
-                <a class="footer-nav_link" href="#">Feedback Button</a>
-                <a class="footer-nav_link" href="#">Enterprise survey <br> </a>
-                <a class="footer-nav_link" href="#">Insights Hub</a>
-                <a class="footer-nav_link" href="#">Feedback Button</a>
-                <a class="footer-nav_link" href="#">Insights Hub</a>
-                <a class="footer-nav_link" href="#">Feedback Button</a>
+                 <!-- Hidden checkbox -->
+          <input type="checkbox" id="footer_nav-toggle4" />
+
+          <!-- footer_nav Button -->
+          <label for="footer_nav-toggle4" class="footer_nav-button4">
+            <span>&#9662;</span>
+          </label>
+                <a class="footer-nav_link footer-nav_link_toggle4" href="#">Insights Hub</a>
+                <a class="footer-nav_link footer-nav_link_toggle4" href="#">Feedback Button</a>
+                <a class="footer-nav_link footer-nav_link_toggle4" href="#">Enterprise survey <br> </a>
+                <a class="footer-nav_link footer-nav_link_toggle4" href="#">Insights Hub</a>
+                <a class="footer-nav_link footer-nav_link_toggle4" href="#">Feedback Button</a>
+                <a class="footer-nav_link footer-nav_link_toggle4" href="#">Insights Hub</a>
+                <a class="footer-nav_link footer-nav_link_toggle4" href="#">Feedback Button</a>
               </div>
               <div class="footer_nav">
                 <p>Survey Template</p>
-                <a class="footer-nav_link" href="#">Insights Hub</a>
-                <a class="footer-nav_link" href="#">Feedback Button</a>
-                <a class="footer-nav_link" href="#">Enterprise survey <br> </a>
-                <a class="footer-nav_link" href="#">Insights Hub</a>
-                <a class="footer-nav_link"  href="#">Feedback Button</a>
-                <a class="footer-nav_link"  href="#">Insights Hub</a>
-                <a class="footer-nav_link"  href="#">Feedback Button</a>
+                 <!-- Hidden checkbox -->
+          <input type="checkbox" id="footer_nav-toggle5" />
+
+          <!-- footer_nav Button -->
+          <label for="footer_nav-toggle5" class="footer_nav-button5">
+            <span>&#9662;</span>
+          </label>
+                <a class="footer-nav_link footer-nav_link_toggle5" href="#">Insights Hub</a>
+                <a class="footer-nav_link footer-nav_link_toggle5" href="#">Feedback Button</a>
+                <a class="footer-nav_link footer-nav_link_toggle5" href="#">Enterprise survey <br> </a>
+                <a class="footer-nav_link footer-nav_link_toggle5" href="#">Insights Hub</a>
+                <a class="footer-nav_link footer-nav_link_toggle5"  href="#">Feedback Button</a>
+                <a class="footer-nav_link footer-nav_link_toggle5"  href="#">Insights Hub</a>
+                <a class="footer-nav_link footer-nav_link_toggle5"  href="#">Feedback Button</a>
               </div>
               <div class="footer_nav">
                 <p>Company</p>
-                <a class="footer-nav_link" href="#">Insights Hub</a>
-                <a class="footer-nav_link" href="#">Feedback Button</a>
-                <a class="footer-nav_link" href="#">Enterprise survey <br> </a>
-                <a class="footer-nav_link" href="#">Insights Hub</a>
-                <a class="footer-nav_link" href="#">Feedback Button</a>
-                <a class="footer-nav_link" href="#">Insights Hub</a>
-                <a class="footer-nav_link" href="#">Feedback Button</a>
+
+                 <!-- Hidden checkbox -->
+          <input type="checkbox" id="footer_nav-toggle6" />
+
+          <!-- footer_nav Button -->
+          <label for="footer_nav-toggle6" class="footer_nav-button6">
+            <span>&#9662;</span>
+          </label>
+                <a class="footer-nav_link footer-nav_link_toggle6" href="#">Insights Hub</a>
+                <a class="footer-nav_link footer-nav_link_toggle6" href="#">Feedback Button</a>
+                <a class="footer-nav_link footer-nav_link_toggle6" href="#">Enterprise survey <br> </a>
+                <a class="footer-nav_link footer-nav_link_toggle6" href="#">Insights Hub</a>
+                <a class="footer-nav_link footer-nav_link_toggle6" href="#">Feedback Button</a>
+                <a class="footer-nav_link footer-nav_link_toggle6" href="#">Insights Hub</a>
+                <a class="footer-nav_link footer-nav_link_toggle6" href="#">Feedback Button</a>
               </div>
             </div>
 
