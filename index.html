@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     
-    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/phone-view.css"/>
-    <link rel="stylesheet" href="./css/tablet-view.css">
-    <link rel="stylesheet" href="./css/tablet-lg-view.css">
-  
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    
+
+    <title> Document</title>
   </head>
   <body>
     <div class="container">
@@ -23,14 +21,30 @@
         />
 
         <ul class="header-nav-options">
-          <li>Product
-            <ul>
-              <li>Create Surveys</li>
+           
+          <li>
+            <!-- Hidden checkbox -->
+            <input type="checkbox" id="product-toggle" />
+            <label for="product-toggle" class="product-button">Product <span>&#9662;</span></label>
+            <ul class="product-list">
+              <li>
+                Create Surveys</li>
               <li>Distributr Surveys</li>
               <li>Act on Feedback</li>
             </ul>
           </li>
-          <li>Solutions</li>
+          <li>
+            <!-- Hidden checkbox -->
+            <input type="checkbox" id="solutions-toggle" /><label for="solutions-toggle" class="solutions-button">Solutions <span>&#9662;</span> </label>
+            <ul class="solutions-list">
+              <li>SaaS</li>
+              <li>Apps</li>
+              <li>E-commerce</li>
+              <li>Healthcare</li>
+              <li>Financial Services</li>
+              <li>Retail</li>
+            </ul>
+            </li>
           <li>Pricing</li>
           <li>integrations</li>
           <li>Resources</li>
@@ -97,7 +111,7 @@
                      <p class="switch-item-title">Customer Surveys</p>
                 </label>
                 
-               
+               </div>
 
               <div class="switch-item">
                 <img
@@ -108,12 +122,6 @@
                 <label for="image-toggle-two" class="image-button">
                   <p class="switch-item-title">Insights Hub</p>
                 </label>
-              
-                <!-- Hidden checkbox -->
-                <!-- <input type="checkbox" class="image-toggle image-toggle-two">
-            <label for="image-toggle-two" class="image-button">
-              
-            </label> -->
               </div>
 
               <div class="switch-item">
@@ -126,13 +134,6 @@
                 <label for="image-toggle-three" class="image-button">
                   <p class="switch-item-title">Feedback Analytics</p>
                 </label>
-                
-
-                <!-- Hidden checkbox -->
-                <!-- <input type="checkbox" class="image-toggle image-toggle-three">
-            <label for="image-toggle" class="image-button">
-              
-            </label> -->
               </div>
 
               <div class="switch-item">
@@ -146,11 +147,6 @@
                   <p class="switch-item-title">Automated Flows</p>
                 </label>
                 
-                <!-- Hidden checkbox -->
-                <!-- <input type="checkbox" class="image-toggle image-toggle-four">
-            <label for="image-toggle" class="image-button">
-              
-            </label> -->
               </div>
             </div>
           </div>
@@ -159,7 +155,7 @@
              <!-- Hidden checkbox -->
                 <input type="checkbox" id="image-toggle">
            
-              </div>
+          
             <img
               class="switch-item-image-one"
               src="./assests/images/surveys-image.webp"
@@ -177,7 +173,7 @@
              <!-- Hidden checkbox -->
              <input type="checkbox" id="image-toggle-three">
             <img
-              class="switch-item-image-four"
+              class="switch-item-image-three"
               src="./assests/images/67d959853e41828456ec326d_Feedback Automation-p-1600.webp"
               alt=""
             />
@@ -185,7 +181,7 @@
              <!-- Hidden checkbox -->
              <input type="checkbox" id="image-toggle-four">
             <img
-              class="switch-item-image-three"
+              class="switch-item-image-four"
               src="./assests/images/67d95971ef9e6c623fe75018_analysis (1)-p-1600.webp"
               alt=""
             />
@@ -279,7 +275,10 @@
         </section>
 
         <section class="section_with_image_bg">
-          <h2>Survicate: one platform to turn feedback to impact</h2>
+          <div class="section_with_image_bg_h2_wrapper">
+            <h2 class="section_with_image_bg_h2">Survicate: one platform to turn feedback to impact</h2>
+          </div>
+         
 
           <div class="div-cards_container">
             <div class="div-card">
@@ -335,10 +334,10 @@
                 alt=""
               />
             </div>
+          </div>
 
-            <div class="div-button_wrapper">
-              <button class="button">See all customers stories</button>
-            </div>
+          <div class="div-button_wrapper">
+            <button class="button">See all customers stories</button>
           </div>
         </section>
 
@@ -349,78 +348,86 @@
               Ask everywhere, learn everything
             </h2>
           </div>
-          <div class="div-step_one_content">
-            <img
-              class="div-step_one_content-img"
-              src="./assests/images/survicate-image-4.webp"
-              alt="illustration-image"
-            />
-            <div class="div-step_content_text">
-              <p class="div-step_content_text_bold">
-                Proactively source feedback with multi - channel surveys
-              </p>
-              <p class="div-step_content_text_normal">
-                Include surveys within your emails, website, mobile and web apps
-                to monitor the entire customer journey and meet customers where
-                they are.
-              </p>
+
+          <div class="div-step_content_flex_wrapper">
+            <div class="div-step_one_content">
+              <img
+                class="div-step_one_content-img"
+                src="./assests/images/survicate-image-4.webp"
+                alt="illustration-image"
+              />
+              <div class="div-step_content_text">
+                <p class="div-step_content_text_bold">
+                  Proactively source feedback with multi - channel surveys
+                </p>
+                <p class="div-step_content_text_normal">
+                  Include surveys within your emails, website, mobile and web apps
+                  to monitor the entire customer journey and meet customers where
+                  they are.
+                </p>
+              </div>
+              <div class="div-step_content_button_container">
+                <button class="div-step_content_button">
+                  Learn more about our powerful surveys
+                </button>
+              </div>
             </div>
-            <div class="div-step_content_button_container">
-              <button class="div-step_content_button">
-                Learn more about our powerful surveys
-              </button>
+            <div class="div-step_one_content">
+              <img
+                class="div-step_one_content-img"
+                src="./assests/images/survicate-image-5.webp"
+                alt="illustration-image"
+              />
+              <div class="div-step_content_text">
+                <p class="div-step_content_text_bold">
+                  Watch trends emerge from the ocean of feedback
+                </p>
+                <p class="div-step_content_text_normal">
+                  Automatically gather constant input from support tickets, call
+                  recordings, online reviews, and more — and rest assured every
+                  channel is covered.
+                </p>
+              </div>
+              <div class="div-step_content_button_container">
+                <button class="div-step_content_button">
+                  Learn more about Insights Hub
+                </button>
+              </div>
             </div>
           </div>
-          <div class="div-step_one_content">
-            <img
-              class="div-step_one_content-img"
-              src="./assests/images/survicate-image-5.webp"
-              alt="illustration-image"
-            />
-            <div class="div-step_content_text">
-              <p class="div-step_content_text_bold">
-                Watch trends emerge from the ocean of feedback
-              </p>
-              <p class="div-step_content_text_normal">
-                Automatically gather constant input from support tickets, call
-                recordings, online reviews, and more — and rest assured every
-                channel is covered.
-              </p>
-            </div>
-            <div class="div-step_content_button_container">
-              <button class="div-step_content_button">
-                Learn more about Insights Hub
-              </button>
-            </div>
-          </div>
+          
         </section>
 
         <section class="section-with_white_bg">
-          <div class="div-step_content_text">
-            <p class="step_label">Step 2</p>
-            <p class="div-step_content_text_bold">
-              Convert raw data into key themes — automatically
-            </p>
-            <p class="div-step_content_text_normal">
-              Our AI will enrich feedback, slice and dice survey results, and
-              build customer dashboards to track insights across the journey and
-              power smarter, faster decisions..
-            </p>
-          </div>
-          <div class="div-step_content_button_container">
-            <button class="div-step_content_button step_two_button">
-              Learn more about Feedback Analytics
-            </button>
-          </div>
-          <img
-            src="./assests/images/step-image2.webp"
+          <div class="div-step_content_text div-step-2_flex_container">
+            <div>
+              <p class="step_label">Step 2</p>
+              <p class="div-step_content_text_bold">
+                Convert raw data into key themes — automatically
+              </p>
+              <p class="div-step_content_text_normal">
+                Our AI will enrich feedback, slice and dice survey results, and
+                build customer dashboards to track insights across the journey and
+                power smarter, faster decisions..
+              </p>
+  
+              <div class="div-step_content_button_container">
+                <button class="div-step_content_button step_two_button">
+                  Learn more about Feedback Analytics
+                </button>
+              </div>
+            </div>
+            <img
+            src="./assests/images/survicate-image6.webp"
             alt="step-image-illustration"
           />
+          </div>
         </section>
 
         <section class="section-with_white_bg">
-          <div class="div-step_content_text">
-            <p class="step_label">Step 3</p>
+          <div class="div-step_content_text  div-step-3_flex_container">
+            <div>
+              <p class="step_label">Step 3</p>
             <p class="div-step_content_text_bold">
               Take action within existing workflows
             </p>
@@ -428,16 +435,18 @@
               Survicate keeps things moving with all your tools, ensuring the
               right steps are taken and the right people are informed.
             </p>
-          </div>
-          <div class="div-step_content_button_container">
-            <button class="div-step_content_button step_two_button">
-              Start Free
-            </button>
-          </div>
-          <img
-            src="./assests/images/step-image3.webp"
+
+            <div class="div-step_content_button_container">
+              <button class="div-step_content_button step_two_button">
+                Start Free
+              </button>
+            </div>
+            </div>
+            <img
+            src="./assests/images/survicate-image-7.webp"
             alt="step-image-illustration"
           />
+          </div>
         </section>
 
         <section class="section-with_white_bg section_testimony">
@@ -466,26 +475,31 @@
           </div>
         </section>
 
-        <section class="section-with_white_bg section_features_feedback">
-            <h2>Features for deeper feedback</h2>
+        <section class="section-with_white_bg section_features_feedback" >
+          <div class="section_features_feedback_h2_wrapper">
+            <h2 class="section_features_feedback_h2">Features for deeper feedback</h2>
+          </div>
 
+          <div class="section_features_feedback_card_flex_container">
             <div class="section_features_feedback_card">
               <img class="feedback_image" src="./assests/images/image-9.webp" alt="features_feedback_card_image">
-              <p class="div-step_content_text_bold card_text">
-                Take action within existing workflows
-              </p>
-              <p class="div-step_content_text_normal">
-                Survicate keeps things moving with all your tools, ensuring the
-                right steps are taken and the right people are informed.
-              </p>
-
-              <div class="div-step_content_button_container">
-                <button class="div-step_content_button step_two_button card_button">
-                  Start Free
-                </button>
+              <div>
+                <p class="div-step_content_text_bold card_text">
+                  Take action within existing workflows
+                </p>
+                <p class="div-step_content_text_normal">
+                  Survicate keeps things moving with all your tools, ensuring the
+                  right steps are taken and the right people are informed.
+                </p>
+  
+                <div class="div-step_content_button_container">
+                  <button class="div-step_content_button step_two_button card_button feature_card_button">
+                    Start Free
+                  </button>
+                </div>
               </div>
-
             </div>
+            
             <div class="section_features_feedback_card">
 
               <img class="feedback_image" src="./assests/images/image-10.webp" alt="features_feedback_card_image">
@@ -498,16 +512,37 @@
               </p>
 
               <div class="div-step_content_button_container">
-                <button class="div-step_content_button step_two_button card_button">
+                <button class="div-step_content_button step_two_button card_button feature_card_button">
                   Learn More
                 </button>
               </div>
-
             </div>
+          </div>
+
+          <div class="section_features_feedback_card_flex_container">
+            <div class="section_features_feedback_card">
+              <img class="feedback_image" src="./assests/images/image-9.webp" alt="features_feedback_card_image">
+              <div>
+                <p class="div-step_content_text_bold card_text">
+                  Take action within existing workflows
+                </p>
+                <p class="div-step_content_text_normal">
+                  Survicate keeps things moving with all your tools, ensuring the
+                  right steps are taken and the right people are informed.
+                </p>
+  
+                <div class="div-step_content_button_container">
+                  <button class="div-step_content_button step_two_button card_button feature_card_button">
+                    Start Free
+                  </button>
+                </div>
+              </div>
+            </div>
+            
             <div class="section_features_feedback_card">
 
-              <img class="feedback_image" src="./assests/images/image-11.webp" alt="features_feedback_card_image">
-              <p class="div-step_content_text_bold card_text">
+              <img class="feedback_image" src="./assests/images/image-10.webp" alt="features_feedback_card_image">
+              <p class="div-step_content_text_bold">
                 Take action within existing workflows
               </p>
               <p class="div-step_content_text_normal">
@@ -516,30 +551,13 @@
               </p>
 
               <div class="div-step_content_button_container">
-                <button class="div-step_content_button step_two_button card_button">
-                  Start Free
-                </button>
-              </div>
-
-            </div>
-            <div class="section_features_feedback_card">
-
-              <img class="feedback_image" src="./assests/images/image-12.webp" alt="features_feedback_card_image">
-              <p class="div-step_content_text_bold card_text">
-                Take action within existing workflows
-              </p>
-              <p class="div-step_content_text_normal">
-                Survicate keeps things moving with all your tools, ensuring the
-                right steps are taken and the right people are informed.
-              </p>
-
-              <div class="div-step_content_button_container">
-                <button class="div-step_content_button step_two_button card_button">
+                <button class="div-step_content_button step_two_button card_button feature_card_button">
                   Learn More
                 </button>
               </div>
             </div>
-
+          </div>
+  
             <div class="div-step_content_button_container btn-free-wrapper">
               <button class="div-step_content_button step_two_button btn_free">
                 Try the platform for free
