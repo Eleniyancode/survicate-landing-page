@@ -458,7 +458,7 @@ display: none;
     padding-block: 10rem;
     padding-top: 7rem;
     /* text-align: center; */
-    background: url(../assests/images/67891db9b4eea24fb86144d0_USE\ CASES\ \(2\)\ \(1\).webp);
+    background: url(./assests/images/67891db9b4eea24fb86144d0_USE\ CASES\ \(2\)\ \(1\).webp);
     background-size: cover;
     background-repeat: no-repeat;
     /* border: 12px dotted crimson; */
@@ -817,7 +817,7 @@ display: none;
     /* border: 4px dotted darkblue; */
     margin: 0 auto;
     text-align: center;
-    background: url(../assests/images/6389df58b699a6599ce4f8d0_integrations-background-image.svg);
+    background: url(./assests/images/6389df58b699a6599ce4f8d0_integrations-background-image.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -883,7 +883,7 @@ display: none;
 
   .section_try_it_now {
     padding-top: 10rem;
-    background: url(../assests/images/66cdaf1bdd12d7296b5e6846_TEAM-background.webp);
+    background: url(./assests/images/66cdaf1bdd12d7296b5e6846_TEAM-background.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 10rem;
@@ -947,7 +947,7 @@ display: none;
     padding-top: 8rem;
     padding-inline: 2.5rem;
     background-color: #e1e2e2;
-    background: url(../assests/images/60a25a39afc13d1831612219_background-footer.svg);
+    background: url(./assests/images/60a25a39afc13d1831612219_background-footer.svg);
     background-size: cover;
     background-position: right bottom;
   }
@@ -1765,7 +1765,7 @@ display: none;
       /* border: 4px dotted darkblue; */
       margin: 0 auto;
       text-align: center;
-      background: url(../assests/images/6389df58b699a6599ce4f8d0_integrations-background-image.svg);
+      background: url(./assests/images/6389df58b699a6599ce4f8d0_integrations-background-image.svg);
       background-size: contain;
       background-repeat: no-repeat;
       display: flex;
@@ -1836,7 +1836,7 @@ display: none;
     
     .section_try_it_now {
       padding-top: 10rem;
-      background: url(../assests/images/66cdaf1bdd12d7296b5e6846_TEAM-background.webp);
+      background: url(./assests/images/66cdaf1bdd12d7296b5e6846_TEAM-background.webp);
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -1898,7 +1898,7 @@ display: none;
       padding-top: 8rem;
       padding-inline: 2.5rem;
       background-color: #e1e2e2;
-      background: url(../assests/images/60a25a39afc13d1831612219_background-footer.svg);
+      background: url(./assests/images/60a25a39afc13d1831612219_background-footer.svg);
       background-size: cover;
       background-position: right bottom;
     }
@@ -2518,7 +2518,7 @@ display: none;
     /* border: 4px dotted darkblue; */
     margin: 0 auto;
     text-align: center;
-    background: url(../assests/images/6389df58b699a6599ce4f8d0_integrations-background-image.svg);
+    background: url(./assests/images/6389df58b699a6599ce4f8d0_integrations-background-image.svg);
     background-size: contain;
     background-repeat: no-repeat;
     border: 2px dotted wheat;
@@ -2584,7 +2584,7 @@ display: none;
   
   .section_try_it_now {
     padding-top: 10rem;
-    background: url(../assests/images/66cdaf1bdd12d7296b5e6846_TEAM-background.webp);
+    background: url(./assests/images/66cdaf1bdd12d7296b5e6846_TEAM-background.webp);
     background-size: cover;
     background-repeat: no-repeat;
   }
